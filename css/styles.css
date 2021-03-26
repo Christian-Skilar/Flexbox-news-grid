@@ -1,0 +1,81 @@
+html {
+	line-height: 1.4rem;
+}
+
+body {
+	font-family: "Notica Text", Verdana, sans-serif;
+	background-color: #d7d8c9;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Dela Gothic One", Arial, sans-serif;
+}
+
+h3 {
+	width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.news {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: 0 auto;
+	gap: 20px;
+}
+
+.news header {
+	flex: 0 0 100%;
+}
+
+.news__item {
+	flex: 1 200px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 5px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.news__item-large {
+	background: #252623;
+	margin-top: 100px;
+	padding: 90px 60px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: default;
+	order: -1;
+}
+
+.news__item-large h3 {
+	width: 100%;
+	font-size: 2rem;
+	line-height: 3.5rem;
+}
+
+.news__item p {
+	max-height: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.news__item p:before {
+	content: "";
+	position: absolute;
+	width: 95%;
+	background: linear-gradient(to bottom, transparent, #fff);
+	height: 200px;
+	bottom: 10px;
+}
+
+.news__item-large p:before {
+	background: none;
+}
